@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Document</title>
+
+    <style>
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>bai1</h2>
+      <label for="diemMon1">Điểm môn 1:</label>
+      <input type="number" id="diemMon1" step="0.1" required />
+
+      <label for="diemMon2">Điểm môn 2:</label>
+      <input type="number" id="diemMon2" step="0.1" required />
+
+      <label for="diemMon3">Điểm môn 3:</label>
+      <input type="number" id="diemMon3" step="0.1" required />
+
+      <label for="khuVuc">Khu vực ưu tiên:</label>
+      <select id="khuVuc">
+        <option value="A">Khu vực A</option>
+        <option value="B">Khu vực B</option>
+        <option value="C">Khu vực C</option>
+      </select>
+
+      <label for="doiTuong">Đối tượng ưu tiên:</label>
+      <select id="doiTuong">
+        <option value="1">Đối tượng 1</option>
+        <option value="2">Đối tượng 2</option>
+        <option value="3">Đối tượng 3</option>
+      </select>
+
+      <button id="btnKiemTra">Kiểm tra</button>
+
+      <div id="result"></div>
+
+    <!-- bai2 -->
+    <h2>bai2</h2>
+    <div>
+      <label for="name">Tên:</label>
+      <input type="text" id="name" required />
+      <br />
+      <label for="consumedKw">Số Kw tiêu thụ:</label>
+      <input type="number" id="consumedKw" required />
+      <br />
+      <button type="button" id="calculateButton">Tính tiền</button>
+    </div>
+
+    <div id="result2"></div>
+
+    <!-- bai3 -->
+    <h2>bai3</h2>
+
+    <label for="hoTen">Họ Tên:</label>
+    <input type="text" id="hoTen" placeholder="Nhập họ tên" /><br />
+
+    <label for="tongThuNhap">Tổng Thu Nhập Năm (triệu đồng):</label>
+    <input
+      type="number"
+      id="tongThuNhap"
+      placeholder="Nhập tổng thu nhập"
+    /><br />
+
+    <label for="soNguoiPhuThuoc">Số Người Phụ Thuộc:</label>
+    <input
+      type="number"
+      id="soNguoiPhuThuoc"
+      placeholder="Nhập số người phụ thuộc"
+    /><br />
+
+    <button id="tinhThue">Tính Thuế</button>
+
+    <p id="ketQua"></p>
+
+    <!-- bai4 -->
+    <h2>bai4</h2>
+    <label for="maKhachHang">Mã Khách Hàng:</label>
+    <input type="text" id="maKhachHang" /><br />
+
+    <label for="loaiKhachHang">Loại Khách Hàng:</label>
+    <select id="loaiKhachHang">
+      <option value="nhaDan">Nhà Dân</option>
+      <option value="doanhNghiep">Doanh Nghiệp</option></select
+    ><br />
+
+    <label for="soKetNoi" id="inputSoKetNoi" style="display: none"
+      >Số Kết Nối:</label
+    >
+    <input type="number" id="soKetNoi" style="display: none" /><br />
+
+    <label for="soKenhCaoCap">Số Kênh Cao Cấp:</label>
+    <input type="number" id="soKenhCaoCap" /><br />
+
+    <button id="tinhHoaDonBtn">Tính Hóa Đơn</button>
+    <div id="ketQua1"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
