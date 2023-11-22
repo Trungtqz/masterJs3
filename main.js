@@ -147,7 +147,11 @@ function tinhHoaDon() {
        phiThueKenhCaoCap = 7.5 * soKenhCaoCap;
    } else if (loaiKhachHang === "doanhNghiep") {
        phiXuLyHoaDon = 15;
-       phiDichVuCoBan = 75 + (soKetNoi - 10) * 5;
+
+       phiDichVuCoBan = 75;
+       if (soKetNoi > 10) {
+        phiDichVuCoBan += (soKetNoi - 10) * 5;
+    }
        phiThueKenhCaoCap = 50 * soKenhCaoCap;
    }
 
@@ -158,7 +162,8 @@ function tinhHoaDon() {
    ketQua += "Tổng Tiền: $" + tongTien.toFixed(2);
 
    document.getElementById("ketQua1").innerHTML = ketQua;
-}
+   console.log("ketQua1");
+};
 
 function hienThiNhapKetNoi() {
    const loaiKhachHang = document.getElementById("loaiKhachHang").value;
@@ -169,5 +174,5 @@ function hienThiNhapKetNoi() {
        soKetNoi.style.display = "block";
    } else {
        inputSoKetNoi.style.display = "none";
-   }
-}
+   };
+};
